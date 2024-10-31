@@ -1,0 +1,35 @@
+@use '../../../styles/variables';
+
+.select{
+    cursor: pointer;
+    padding-right: 13px;
+    position: relative;
+    width: max-content;
+}
+
+.modal{
+    transform: translateX(-10px);
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    border: 1px solid variables.$color-light-gray;
+}
+.item{
+    padding: 5px 10px;
+    transition: opacity .2s ease-in-out;
+    &:hover{
+        opacity: .7;
+    }
+}
+.item:not(:last-child){
+    border-bottom: 1px solid variables.$color-light-gray;
+}
+.active{
+    background-color: variables.$color-light-gray;
+}
+.icon{
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    top: 7px;
+}

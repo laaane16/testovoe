@@ -1,0 +1,21 @@
+@use "../styles/variables";
+@use "../styles/mixins";
+
+.section {
+  padding-top: 65px;
+}
+.link {
+  border: 2px solid variables.$color-light-gray;
+  color: variables.$color-dark-gray;
+  border-radius: 4px;
+  padding: 5px 10px;
+  @include mixins.font(20px, 700, 30px);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color .2s ease-in-out;
+}
+.link:hover {
+  background-color: variables.$color-light-gray;
+}

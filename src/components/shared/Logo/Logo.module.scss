@@ -1,0 +1,19 @@
+@use '../../../styles/variables';
+@use '../../../styles/mixins';
+
+
+.path{
+    display: inline-block;
+    position: relative;
+    @include mixins.font(50px, 700, 50px);
+    &Right{
+        color: variables.$color-yellow;
+    }
+    &Over{
+        @include mixins.font(13px, 500, 13px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(2px);
+    }
+}

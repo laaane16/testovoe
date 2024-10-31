@@ -1,0 +1,11 @@
+@use '../../../styles/variables';
+@use '../../../styles/mixins';
+
+.footer{
+    padding: 16px 0px;
+    background-color: variables.$color-bold-gray;
+}
+.text{
+    color: white;
+    @include mixins.font(10px, 400, 20px);
+}

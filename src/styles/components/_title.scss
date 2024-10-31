@@ -1,0 +1,5 @@
+@use '../mixins';
+
+.title{
+    @include mixins.font(20px, 500, 27px);
+}

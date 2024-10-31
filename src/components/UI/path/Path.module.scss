@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.item {
+    transition: opacity .2s ease-in-out;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+.item:last-child {
+  font-weight: 700;
+}

@@ -1,0 +1,19 @@
+@use '../../../styles/variables';
+@use '../../../styles/mixins';
+
+.nav{
+    border-top: 1px solid variables.$color-light-gray;
+    border-bottom: 1px solid variables.$color-light-gray;
+    padding: 15px 0px;
+}
+.list{
+    display: flex;
+    gap: 32px;
+}
+.item{
+    line-height: 21px;
+    transition: opacity .2s ease-in-out;
+    &:hover{
+        opacity: .6;
+    }
+}

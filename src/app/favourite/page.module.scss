@@ -1,0 +1,69 @@
+@use "../../styles/mixins";
+@use "../../styles/variables";
+
+.section {
+  position: relative;
+  padding: 64px 0px 75px 0px;
+}
+.title {
+  @include mixins.font(32px, 400, 43.2px);
+  margin-bottom: 5px;
+}
+.content {
+  padding-top: 40px;
+}
+.line {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: 110.2px;
+}
+.count {
+  @include mixins.font(24px, 400, 32.4px);
+  margin-bottom: 34px;
+}
+.item {
+  display: flex;
+  gap: 50px;
+  padding: 25px;
+}
+.item:not(:last-child){
+    margin-bottom: 30px;
+    border-bottom: 1px solid variables.$color-light-gray;
+}
+.itemContent {
+  width: 100%;
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.itemInfo {
+  flex-grow: 1;
+}
+.category {
+  margin-bottom: 17px;
+}
+.itemTitle{
+    max-width: 215px;
+}
+.itemTitle,
+.price {
+  @include mixins.font(20px, 900, 27px);
+}
+.price {
+  margin-top: 30px;
+  margin-right: 14px;
+}
+.btn {
+    border-radius: 4px;
+  margin-top: 30px;
+  background-color: transparent;
+  border: 0;
+  padding: 5px 10px;
+  height: max-content;
+  color: #707070;
+}
+.btn:hover{
+    background-color: variables.$color-light-gray;
+}

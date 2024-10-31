@@ -1,0 +1,26 @@
+.container{
+    padding: 30px 0px 100px 0px;
+}
+.content{
+    display: flex;
+    gap: 89px;
+}
+.catalog{
+    padding-top: 29px;
+}
+.title{
+    margin-bottom: 30px;
+}
+.select{
+    margin-bottom: 27px;
+}
+.subtitle{
+    margin-bottom: 32px;
+}
+
+.item:not(:last-child){
+    margin-bottom: 16px;
+}
+.input{
+    margin-right: 10px;
+}

@@ -1,0 +1,10 @@
+@use '../../../styles/variables';
+
+.skeleton {
+    height: 100%;
+  box-shadow: 1px 0 0 0 variables.$color-light-gray,
+    0 1px 0 0 variables.$color-light-gray,
+    1px 1px 0 0 variables.$color-light-gray,
+    /* Just to fix the corner */ 1px 0 0 0 variables.$color-light-gray inset,
+    0 1px 0 0 variables.$color-light-gray inset;
+}

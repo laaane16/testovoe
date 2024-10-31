@@ -1,0 +1,76 @@
+@use "../../../styles/variables";
+@use "../../../styles/mixins";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+  padding: 10px 21.85px;
+  // outline: 1px solid;
+  box-shadow: 1px 0 0 0 variables.$color-light-gray,
+    0 1px 0 0 variables.$color-light-gray,
+    1px 1px 0 0 variables.$color-light-gray,
+    /* Just to fix the corner */ 1px 0 0 0 variables.$color-light-gray inset,
+    0 1px 0 0 variables.$color-light-gray inset;
+  &:hover .more{
+    opacity: 1;
+  }
+}
+.favBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 21.85px;
+}
+.iconRed {
+  fill: variables.$color-red;
+}
+.type {
+  color: variables.$color-dark-gray;
+  margin-bottom: 10px;
+}
+.title {
+  max-width: 150px;
+  font-weight: 500;
+}
+.price {
+  @include mixins.font(24px, 900, 32px);
+}
+.image {
+  object-fit: contain;
+  margin: 0px auto;
+  width: 100%;
+  max-height: 223px;
+  margin-bottom: 58px;
+}
+.info {
+  margin-bottom: 42px;
+}
+.button {
+  cursor: pointer;
+  padding: 5px 10px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.more {
+  opacity: 0;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  border: 2px solid variables.$color-light-gray;
+  color: variables.$color-dark-gray;
+  border-radius: 4px;
+  padding: 5px 10px;
+  transition-property: opacity background-color;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    background-color: variables.$color-light-gray;
+  }
+}
+

@@ -1,0 +1,77 @@
+@use "../../../styles/mixins";
+@use "../../../styles/variables";
+
+.section {
+  padding-top: 64px;
+}
+.image{
+  width: 256px;
+}
+.content {
+  padding-top: 29px;
+  display: flex;
+  gap: 41px;
+}
+.info {
+  width: 100%;
+  position: relative;
+}
+.title {
+  max-width: 260px;
+  @include mixins.font(20px, 900, 27px);
+  margin-bottom: 6px;
+}
+.rating{
+    display: flex;
+    gap: 6px;
+}
+.preview {
+  padding-bottom: 15px;
+  border-bottom: 1px solid variables.$color-light-gray;
+}
+.descriptionBox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-top: 39px;
+}
+.subtitle {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.text {
+  max-width: 523px;
+}
+.likeBtn {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid variables.$color-light-gray;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 8px 21px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.list{
+    display: flex;
+    gap: 4px;
+}
+.price {
+  @include mixins.font(20px, 900, 27px);
+  margin-bottom: 15px;
+}
+.buyBtn {
+  cursor: pointer;
+  color: white;
+  background-color: variables.$color-yellow;
+  padding: 8px 25px;
+  @include mixins.font(16px, 500, 24px);
+  border: 0;
+  border-radius: 4px;
+}
+.redIcon{
+  fill: variables.$color-red;
+}

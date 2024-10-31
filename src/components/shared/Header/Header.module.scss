@@ -1,0 +1,19 @@
+.container{
+    padding: 12px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.logo{
+    margin-right: 125px;
+    transition: opacity .2s ease-in-out;
+    &:hover{
+        opacity: .8;
+    }
+}
+.headerSearch{
+    max-width: 428px;
+}
+.favourite{
+    margin-left: auto;
+}

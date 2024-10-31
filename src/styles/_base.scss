@@ -1,0 +1,16 @@
+@use './mixins';
+
+.layout{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+}
+._container{
+    padding: 0px 10px;
+    max-width: 952px;
+    margin: 0px auto;
+}
+body{
+    @include mixins.font(14px, 400,19px)
+}
